@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Toolkit Dashboard</title>
+    <style>
+        /* 1. Full Screen Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        /* 2. Brighter, Lighter Celestial Sky-Blue Gradient Backdrop */
+        body {
+            background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 50%,#A1C4FD 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Perfectly places the title down just like your original 15:49 screen */
+            padding: 115px 16px 40px 16px; 
+        }
+
+        /* 3. Pristine White Title */
+        h1 {
+            color: #ffffff;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 45px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        /* 4. Full-Width Stretched Mobile Grid Layout */
+        .toolkit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 14px; /* Flawless horizontal and vertical gap spacing */
+            width: 100%;
+            max-width: 100%; /* Lets the buttons stretch fully across the viewport */
+        }
+
+        /* 5. Thin & Long Buttons with Golden Outlines and Bold Black Underlines */
+        .toolkit-card {
+            background-color: #ffffff !important;
+            color: #000000 !important; /* Sharp black lettering */
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            border-radius: 3px !important;
+            
+            /* The clean black underlines directly underneath your button text */
+            text-decoration: underline !important;
+            text-decoration-color: #000000 !important;
+            text-underline-offset: 3px; /* Creates the perfect separation gap */
+            
+            /* Center-aligns single lines and double-wrapped labels beautifully */
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            
+            /* Your exact thin-but-long proportional button scaling */
+            height: 60px !important; 
+            width: 100% !important;
+            padding: 0 10px !important;
+            cursor: pointer;
+
+            /* Aesthetic Golden Borders + Powerful Electric Halo Glow Effect */
+            border: 2px solid #FFD700 !important;
+            box-shadow: 0 0 15px rgba(255, 235, 59, 0.95) !important;
+            
+            outline: none !important;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Smooth responsive click/tap animation on mobile screens */
+        .toolkit-card:active {
+            transform: scale(0.97);
+            background-color: #fcfcfc !important;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Toolkit</h1>
+
+    <div class="toolkit-grid" id="dashboard-grid">
+        <button class="toolkit-card" onclick="alert('To-do list opening...')">To- do-list</button>
+        <button class="toolkit-card" onclick="alert('Time table opening...')">Time table</button>
+        <button class="toolkit-card" onclick="alert('Sketch opening...')">Sketch</button>
+        <button class="toolkit-card" onclick="openDatesView()">Dates</button>
+        <button class="toolkit-card" onclick="openUnitConverter()">Unit converter</button>
+        <button class="toolkit-card" onclick="alert('Notes opening...')">Notes</button>
+        <button class="toolkit-card" onclick="alert('Reminders opening...')">Reminders</button>
+        <button class="toolkit-card" onclick="alert('Calendars opening...')">Calenders</button>
+    </div>
+
+    <script>
+        function openDatesView() {
+            alert('Dates layout opening...');
+        }
+
+        function openUnitConverter() {
+            alert('Unit converter layout opening...');
+        }
+    </script>
+
+</body>
+</html>
