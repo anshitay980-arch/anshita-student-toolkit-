@@ -1,6 +1,7 @@
 # anshita-student-toolkit-
 A lightweight  , responsive student toolkit built entirely on a smartphone using Acode . Features essential productivity utilities for students,  crafted with HTML , CS##
-About Me
+
+About Me✨️🎀
 I am a 14-year-old school student exploring beyond the textbooks to build clean, accessible web tools that help students optimize their daily productivity. 
 
 * 📱 **100% Mobile Setup:** Proudly coding entirely on my phone using Acode and managing repositories directly through Git.
