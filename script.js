@@ -14,5 +14,13 @@ card.appendChild(textSpan);
 card.appendChild(checkbox);
 taskList.appendChild(card);
 }
+tasks.forEach(renderTask);
+addTaskbtn.addEventListener('click',()=>{
+const text =taskinput.value.trim();
+if(text==='')return;
+renderTask(text);
+tasks.push(text);
+localStorage.setItem('fresh_tasks_vault',JSON.stringify (tasks));
+taskinput.value='';});
 
 
