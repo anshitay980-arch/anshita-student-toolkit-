@@ -10,6 +10,7 @@ const textSpan = document.createElement('span');
  textSpan.textContent=taskText;
  const checkbox = document.createElement('input');
 checkbox.type='checkbox';
+ checkbox.checked = task.completed;
 card.appendChild(textSpan);
  checkbox.addEventListener('click',()=>{task.completed = checkbox.checked;
 localStorage.setItem('fresh_tasks_vault',JSON.stringify(tasks))})
@@ -20,14 +21,16 @@ tasks.forEach(renderTask);
 addTaskbtn.addEventListener('click',()=>{
 const text =taskinput.value.trim();
 if(text==='')return;
- clearBtn.addEventListener('click', () => {
+ const newTask = { text: text, completed: false };
+renderTask(newTask);
+tasks.push(newTask);
+localStorage.setItem('fresh_tasks_vault',JSON.stringify (tasks));
+taskinput.value='';
+});
+clearBtn.addEventListener('click', () => {
   tasks = [];
   localStorage.removeItem('fresh_tasks_vault');
   taskList.innerHTML = '';
 });
-renderTask(text);
-tasks.push(text);
-localStorage.setItem('fresh_tasks_vault',JSON.stringify (tasks));
-taskinput.value='';});
 
 
