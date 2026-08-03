@@ -9,18 +9,21 @@
      <body>
      <div class= "appContainer">
      <h1 id="app-title">Unit converter</h1>
-     <select id ="categorySelect">Category
-     
-     
+     <select id ="categorySelect">
+     <option value="length">Length</option>
+     <option value="weight/mass">Weight/mass</option>
+     <option value="temperature">Temperature</option>
      </select>
       <input type="number" id="inputValue" placeholder="Enter Value>
-     
-     
-     <select id="fromUnit">From
-     
+     <select id="fromUnit">
+                <option value="m">metre</option>
+     <option value="km">kilometre</option>
+     <option value="ft">feet</option>
      </select>
-     <select id="toUnit">To
-     
+     <select id="toUnit">
+                 <option value="m">metre</option>
+     <option value="km">kilometre</option>
+     <option value="ft">feet</option>
      </select>
      <button id="convertBtn">Convert</button>
      <div id="resultDisplay">Result:_ _</div>
