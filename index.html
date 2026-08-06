@@ -73,3 +73,12 @@
    <h2 class="sub-title">For youngers</h2>
    <a href="Dashboard.html">Get started</a>
    </div>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('Service Worker active!', reg))
+        .catch(err => console.log('Service Worker error:', err));
+    });
+  }
+    </script>
