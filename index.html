@@ -95,6 +95,13 @@
                 .then(reg => console.log('Service Worker active!', reg))
                 .catch(err => console.log('Service Worker error:', err));
         });
+        <!-- Remove this block from index.html -->
+<script>
+if ('serviceWorker' in navigator) {
+    ...
+}
+</script>
+
     }
     </script>
 </body>
