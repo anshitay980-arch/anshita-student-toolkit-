@@ -36,6 +36,18 @@ const numericValue=parseFloat(inputValue.value);
   {finalResult=valueInGrams/1000;}
   if(selectedTo==="lb")
   {finalResult=valueInGrams/453.592;}
+    if(selectedFrom==="c")
+  {valueInCelsius=numericValue;}
+  if(selectedFrom==="f")
+  {valueInCelsius=(numericValue-32)*5/9;}
+  if(selectedFrom==="K")
+  {valueInCelsius=numericValue-273.15;}
+  if(selectedTo==="c")
+  {finalResult=valueInCelsius;}
+  if(selectedTo==="f")
+  {finalResult=(valueInCelsius*9/5)+32;}
+  if(selectedTo==="K")
+  {finalResult=valueInCelsius+273.15;}
 result.textContent="Result:"+finalResult;
 });
 categorySelect.addEventListener('change',function(){const selectedCategory = categorySelect.value;
