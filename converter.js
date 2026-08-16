@@ -23,5 +23,29 @@ const numericValue=parseFloat(inputValue.value);
   if(selectedTo==="km")
   {valueInMetres=numericValue*1000;}
   if(selectedTo==="ft")
-  {valueInMetres=numericValue*0.3048;}alert("Result:"+finalResult);
+  {finalResult=valueInMetres/0.3048;}
+result.textContent="Result:"+finalResult;
+});
+categorySelect.addEventListener('change',function(){const selectedCategory = categorySelect.value;
+if(selectedCategory==="length")
+{fromUnit.innerHTML= `<option value="m">Metre</option>
+    <option value="km">Kilometer</option>
+    <option value="ft">Feet</option>`;
+toUnit.innerHTML=`<option value="m">Metre</option>
+    <option value="km">Kilometer</option>
+    <option value="ft">Feet</option>`;}
+else if(selectedCategory==="weight")
+{fromUnit.innerHTML=`<option value="g">Grams</option>
+<option value="kg">Kilograms</option>
+<option value="lb">Pound</option>`;
+toUnit.innerHTML=`<option value="g">Grams</option>;
+<option value="kg">Kilograms</option>
+<option value="lb">Pound</option>`;}
+else if(selectedCategory==="temperature")
+{fromUnit.innerHTML=`<option value="c">celsius</option>
+<option value="f">fahrenheit</option>
+<option value="K">Kelvin</option>`;
+toUnit.innerHTML=`<option value="c">celsius</option>
+<option value="f">fahrenheit</option>
+<option value="K">Kelvin</option>`;}
 });
