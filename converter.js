@@ -24,6 +24,18 @@ const numericValue=parseFloat(inputValue.value);
   {valueInMetres=numericValue*1000;}
   if(selectedTo==="ft")
   {finalResult=valueInMetres/0.3048;}
+    if(selectedFrom==="g")
+  {valueInGrams=numericValue;}
+  if(selectedFrom==="kg")
+  {valueInGrams=numericValue*1000;}
+  if(selectedFrom==="lb")
+  {valueInGrams=numericValue*453.592;}
+  if(selectedTo==="g")
+  {finalResult=valueInGrams;}
+  if(selectedTo==="kg")
+  {finalResult=valueInGrams/1000;}
+  if(selectedTo==="lb")
+  {finalResult=valueInGrams/453.592;}
 result.textContent="Result:"+finalResult;
 });
 categorySelect.addEventListener('change',function(){const selectedCategory = categorySelect.value;
