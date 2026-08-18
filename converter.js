@@ -1,11 +1,12 @@
 const select =document.getElementById('categorySelect');
-const inputtype = document.getElementById('inputValue');
+const inputValue = document.getElementById('inputValue');
 const fromUnit =document.getElementById('fromUnit');
 const toUnit = document.getElementById('toUnit');
-const button = document.getElementById('convertBtn');
+const convertBtn = document.getElementById('convertBtn');
 const result = document.getElementById('resultDisplay');
-convertBtn.addEventListener('click',function(){alert('connected!');});
 let valueInMetres;
+let valueInGrams;
+let valueInCelsius;
 let finalResult;
 convertBtn.addEventListener('click',function(){
 const userTypedText=inputValue.value;
@@ -19,12 +20,12 @@ const numericValue=parseFloat(inputValue.value);
  if(selectedFrom==="ft")
   {valueInMetres=numericValue*0.3048;}
   if(selectedTo==="m")
-  {valueInMetres=numericValue;}
+  {finalResult=valueInMetres;}
   if(selectedTo==="km")
-  {valueInMetres=numericValue*1000;}
+  {finalResult=valueInMetres/1000;}
   if(selectedTo==="ft")
   {finalResult=valueInMetres/0.3048;}
-    if(selectedFrom==="g")
+  if(selectedFrom==="g")
   {valueInGrams=numericValue;}
   if(selectedFrom==="kg")
   {valueInGrams=numericValue*1000;}
@@ -36,7 +37,7 @@ const numericValue=parseFloat(inputValue.value);
   {finalResult=valueInGrams/1000;}
   if(selectedTo==="lb")
   {finalResult=valueInGrams/453.592;}
-    if(selectedFrom==="c")
+  if(selectedFrom==="c")
   {valueInCelsius=numericValue;}
   if(selectedFrom==="f")
   {valueInCelsius=(numericValue-32)*5/9;}
@@ -48,7 +49,7 @@ const numericValue=parseFloat(inputValue.value);
   {finalResult=(valueInCelsius*9/5)+32;}
   if(selectedTo==="K")
   {finalResult=valueInCelsius+273.15;}
-result.textContent="Result:"+finalResult;
+  result.textContent="Result:"+finalResult;
 });
 categorySelect.addEventListener('change',function(){const selectedCategory = categorySelect.value;
 if(selectedCategory==="length")
