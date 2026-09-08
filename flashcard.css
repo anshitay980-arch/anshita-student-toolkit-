@@ -1,0 +1,14 @@
+@import url('[https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap)');
+*{
+     margin:0;
+     padding: 15px;
+     font-family:Outfit;
+   }
+body{
+  background-color: #847EA6;
+  color:#ffffff;
+  display:flex;
+  align-items: center;
+  margin-top: 10px;
+}
+  
