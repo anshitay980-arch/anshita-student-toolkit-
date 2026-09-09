@@ -11,4 +11,12 @@ body{
   align-items: center;
   margin-top: 10px;
 }
+.card-front{
+  box-shadow: #aeadca;
+  padding: 26px;
+  background: #CCCBE7;
+  border-radius:10px;
+  width:200px;
+  height:200px;
+}
   
