@@ -19,3 +19,43 @@ body{
   width:200px;
   height:200px;
 }
+.card-back{
+  padding: 26px;
+  background: #CCCBE7;
+  border-radius:10px;
+  width:200px;
+  height:200px;
+  box-shadow:#FFD93D;
+}
+#controlButtons{
+  background-color:#A78BFA;
+  color:#ffffff;
+  border-radius:20px;
+  border:none;
+  width:100%;
+  cursor: pointer;
+  font-weight: bold;
+  padding:16px;
+  
+}
+  .card-back{
+  padding: 26px;
+  background: #CCCBE7;
+  border-radius:10px;
+  width:200px;
+  height:200px;
+  box-shadow:#FFD93D;
+}
+#controlButtons{
+  background-color:#A78BFA;
+  color:#ffffff;
+  border-radius:20px;
+  border:none;
+  width:100%;
+  cursor: pointer;
+  font-weight: bold;
+  padding:16px;
+  
+}
+
+  
