@@ -36,7 +36,6 @@ body{
   cursor: pointer;
   font-weight: bold;
   padding:16px;
-  
 }
   .card-back{
   padding: 26px;
@@ -45,17 +44,26 @@ body{
   width:200px;
   height:200px;
   box-shadow:#FFD93D;
+  }
+.nav-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-#controlButtons{
-  background-color:#A78BFA;
-  color:#ffffff;
-  border-radius:20px;
-  border:none;
-  width:100%;
-  cursor: pointer;
-  font-weight: bold;
-  padding:16px;
-  
+.nav-btn {
+    background-color: #AEADCA;
+    color: #ffffff;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 6px;
+   flex:1;
 }
+
 
   
