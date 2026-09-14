@@ -64,6 +64,36 @@ body{
     padding: 12px 6px;
    flex:1;
 }
+input{
+  box-sizing:border-box;
+  width:100%;
+  color:#847EA6;
+  padding-right: 16px;
+  padding-bottom:12px;
+  padding-left: 16px;
+  padding-top: 12px;
+  border: 2px solid#AEADCA;
+  border-radius:10px;  
+  gap:10px;
+  margin-bottom: 12px;
+}
+.card-btn{
+  box-sizing:border-box;
+  width:100%;
+  color:#ffffff;
+  padding-right: 16px;
+  padding-bottom:12px;
+  padding-left: 16px;
+  padding-top: 12px;
+  border: 2px solid#AEADCA;
+  border-radius:10px;  
+  gap:10px;
+  font-weight: bold;
+  color:#8E73E6;
+}
+
+
+  
 
 
   
