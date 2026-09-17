@@ -1,4 +1,6 @@
 const flashcard=document.getElementById("flashcard");
-const flip =document.getElementById("flip-btn");
-flipBtn.addEventListener('click',function(){
+const flipbtn =document.getElementById("flipbtn");
+flipbtn.addEventListener('click',function  (){
+flashcard.classList.toggle('flipped')
+});
   
