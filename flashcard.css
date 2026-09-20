@@ -18,6 +18,8 @@ body{
   border-radius:10px;
   width:200px;
   height:200px;
+position:absolute;
+backface-visibility:hidden;
 }
 .card-back{
   padding: 26px;
@@ -26,6 +28,8 @@ body{
   width:200px;
   height:200px;
   box-shadow:#FFD93D;
+     position:absolute;
+   backface-visibility:hidden;
 }
 #controlButtons{
   background-color:#A78BFA;
@@ -90,6 +94,11 @@ input{
   gap:10px;
   font-weight: bold;
   color:#8E73E6;
+}
+#flashcard 
+{
+transform-style: preserve-3d;
+transition:transform 0.6s ease;
 }
 
 
