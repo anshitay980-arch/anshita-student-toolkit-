@@ -20,6 +20,7 @@ body{
   height:200px;
 position:absolute;
 backface-visibility:hidden;
+     transform:rotateY(180deg);
 }
 .card-back{
   padding: 26px;
@@ -30,6 +31,7 @@ backface-visibility:hidden;
   box-shadow:#FFD93D;
      position:absolute;
    backface-visibility:hidden;
+     transform:rotateY(180deg);
 }
 #controlButtons{
   background-color:#A78BFA;
@@ -40,15 +42,7 @@ backface-visibility:hidden;
   cursor: pointer;
   font-weight: bold;
   padding:16px;
-}
-  .card-back{
-  padding: 26px;
-  background: #CCCBE7;
-  border-radius:10px;
-  width:200px;
-  height:200px;
-  box-shadow:#FFD93D;
-  }
+
 .nav-controls {
     display: flex;
     flex-wrap: wrap;
@@ -95,10 +89,18 @@ input{
   font-weight: bold;
   color:#8E73E6;
 }
-#flashcard 
-{
-transform-style: preserve-3d;
+#flashcard{
+position:relative;
+height:250px;
+width:100%;
+transform-style:preserve-3d;
 transition:transform 0.6s ease;
+display:flex;
+align-items:center;
+justify-content:center;
+#flashcard.flipped
+{
+transform:rotateY(180deg);
 }
 
 
