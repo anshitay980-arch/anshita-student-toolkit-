@@ -8,3 +8,16 @@ I am a 14-year-old school student exploring beyond the textbooks to build clean,
 * 🎯 **Current Focus:** Mastering JavaScript DOM manipulation and building out interactive web applications.
 * 🚀 **My Journey:** I used to be an unknown tech student coding quietly in Acode behind the world and wanted to step out of the shadows and claiming my space in developer community, but now that I've discovered this platform, I'm here to learn, build, and level up!
 
+---
+
+### 🎨 Visual Evolution: Classic v1.0 vs. Glassmorphic v2.0
+
+| Design Aspect | Classic Build (v1.0) | Glassmorphic Redesign (v2.0) |
+| :--- | :--- | :--- |
+| **UI Aesthetic** | Solid flat colors & basic card fills | Modern frosted glass with `backdrop-filter` |
+| **Background** | Minimalist gradient fill | Vibrant multi-color mesh gradient |
+| **Containers** | Opacity 100% (`#ffffff`) | Translucent `rgba(255, 255, 255, 0.15)` |
+| **Borders & Shadows** | Standard solid borders | Subtle white highlight (`1px solid rgba(...)`) & soft ambient glow |
+| **Archived Code** | [v1.0.0 Release Notes](https://github.com/anshitay980-arch/anshita-student-toolkit-/releases/tag/v1.0.0) | *Active Refactor 🚀* |
+
+---
