@@ -1,5 +1,4 @@
 # anshita-student-toolkit-
-
 ![Version](https://img.shields.io/github/v/release/anshitay980-arch/anshita-student-toolkit-?color=blue&style=for-the-badge)
 ![Clones](https://img.shields.io/badge/Git_Clones-139+-brightgreen?style=for-the-badge&logo=git)
 ![Views](https://img.shields.io/badge/Repository_Views-200+-orange?style=for-the-badge&logo=github)
