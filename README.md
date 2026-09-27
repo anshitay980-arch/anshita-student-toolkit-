@@ -1,8 +1,11 @@
 # anshita-student-toolkit-
+
 ![Version](https://img.shields.io/github/v/release/anshitay980-arch/anshita-student-toolkit-?color=blue&style=for-the-badge)
 ![Clones](https://img.shields.io/badge/Git_Clones-139+-brightgreen?style=for-the-badge&logo=git)
 ![Views](https://img.shields.io/badge/Repository_Views-200+-orange?style=for-the-badge&logo=github)
-![Deployment](https://img.shields.io/badge/GitHub_Pages-Live-purple?style=for-the-badge&logo=github)
+![Deployments](https://img.shields.io/badge/GitHub_Deployments-101_Passed-success?style=for-the-badge&logo=githubactions)
+
+
 
 A lightweight  , responsive student toolkit built entirely on a smartphone using Acode squinting with my fingers and troubling on barely a 5 inch screen. Features essential productivity utilities for students,  crafted with HTML,CSS and JavaScript. 🌈
 
