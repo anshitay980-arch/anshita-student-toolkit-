@@ -26,7 +26,11 @@ prebtn.addEventListener('click',function(){
   currentIndex =currentIndex-1;
   updateCard();
 });
-  
+const deletebtn=document.getElementById ("delete-btn");
+deletebtn.addEventListener('click',function(){
+  deck.splice(currentIndex, 1);
+  updateCard ();
+});
 
 
   
