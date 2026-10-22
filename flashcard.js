@@ -15,7 +15,17 @@ function updateCard(){
   cardBack.textContent= deck[currentIndex].back;
 }
 updateCard();
-
+const nextbtn =document.getElementById ("next-btn");
+nextbtn.addEventListener('click',function
+(){
+  currentIndex=currentIndex +1;
+  updateCard();
+});
+const prevbtn=document.getElementById ("prev-btn");
+prebtn.addEventListener('click',function(){
+  currentIndex =currentIndex-1;
+  updateCard();
+});
   
 
 
