@@ -31,6 +31,19 @@ deletebtn.addEventListener('click',function(){
   deck.splice(currentIndex, 1);
   updateCard ();
 });
-
+const frontinput=document.getElementById ("front-input");
+const backinput=document.getElementById ("back-input");
+const addbtn=document.getElementById ("add-btn");
+addbtn.addEventListener('click',function(){
+ const frontVal =frontinput.value;
+  const backVal=backinput.value;
+  deck.push(
+    {front:frontVal , back:backVal}
+  );
+  currentIndex = deck.length - 1;
+  updateCard ();
+  frontinput.value="";
+  backinput.value="";
+});
 
   
