@@ -18,17 +18,27 @@ updateCard();
 const nextbtn =document.getElementById ("next-btn");
 nextbtn.addEventListener('click',function
 (){
-  currentIndex=currentIndex +1;
+  if(currentIndex < deck.length-1)
+  {
+     currentIndex=currentIndex +1;
   updateCard();
+  }
 });
 const prevbtn=document.getElementById ("prev-btn");
 prebtn.addEventListener('click',function(){
-  currentIndex =currentIndex-1;
+  if(currentIndex >0)
+  {
+     currentIndex =currentIndex-1;
   updateCard();
+  }
 });
 const deletebtn=document.getElementById ("delete-btn");
 deletebtn.addEventListener('click',function(){
   deck.splice(currentIndex, 1);
+  if(currentIndex >=deck.length)
+  {
+  currentIndex--;
+  }
   updateCard ();
 });
 const frontinput=document.getElementById ("front-input");
