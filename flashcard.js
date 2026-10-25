@@ -1,15 +1,14 @@
 const flashcard=document.getElementById("flashcard");
 const flipbtn =document.getElementById("flip-btn");
-flipbtn.addEventListener('click',function  (){
+flipbtn.addEventListener('click',function   (){
 flashcard.classList.toggle('flipped')
 });
-const deck=[
+ const deck=[
   {front:"Your term or question1",back:"Your definition or answer1"},
-  {front:"Your term or question2",back:"Your definitionconst or answer2"}
-];
+  {front:"Your term or question2",back:"Your definition or answer2"}];
 let currentIndex=0;
-const cardFront=document.getElementById("cardFront");
-const cardBack=document.getElementById("cardBack");
+const cardFront=document.querySelector(".card-front");
+const cardBack=document.querySelector(".card-back");
 function updateCard(){
   cardFront.textContent= deck[currentIndex].front;
   cardBack.textContent= deck[currentIndex].back;
@@ -18,19 +17,17 @@ updateCard();
 const nextbtn =document.getElementById ("next-btn");
 nextbtn.addEventListener('click',function
 (){
-  if(currentIndex < deck.length-1)
+  if( currentIndex < deck.length-1)
   {
-     currentIndex=currentIndex +1;
+  currentIndex=currentIndex +1;
   updateCard();
   }
 });
 const prevbtn=document.getElementById ("prev-btn");
-prebtn.addEventListener('click',function(){
-  if(currentIndex >0)
-  {
-     currentIndex =currentIndex-1;
-  updateCard();
-  }
+prevbtn.addEventListener('click',function(){
+  if(currentIndex > 0 )
+  {currentIndex =currentIndex-1;
+  updateCard();}
 });
 const deletebtn=document.getElementById ("delete-btn");
 deletebtn.addEventListener('click',function(){
@@ -56,4 +53,4 @@ addbtn.addEventListener('click',function(){
   backinput.value="";
 });
 
-  
+
