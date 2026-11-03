@@ -1,25 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#a8b5ff">
     <title>Student Toolkit</title>
-    <!-- PWA Requirements -->
-<link rel="manifest" href="./manifest.json">
-<meta name="theme-color" content="#0d1117">
-<link rel="apple-touch-icon" href="./icon-192.png">
-
-<!-- Register Service Worker -->
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js')
-        .then(() => console.log('Service Worker Registered!'))
-        .catch(err => console.log('SW Registration Failed:', err));
-    });
-  }
-</script>
-
+    <link rel="stylesheet" href="Style.css">
     <style>
         body {
             margin: 0;
@@ -30,72 +17,72 @@
             justify-content: center;
             align-items: center;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #a18cd1 100%);
-            position: relative;
-            text-align: center;
-            box-sizing: border-box;
+                background: linear-gradient(135deg, #AEC8E9 0%, #B7C0DF 50%, #CCCBE1 100%);
+
+            position :relative;
+            text-align:center;
+            max-width: 80%,
+        }
+        
+       .top-left-label{
+            font-size:20px;
+            color:#333333;
+            top:15px;
+            left:15px;
+            position : absolute;
         }
 
-        .top-left-label {
-            font-size: 20px;
-            color: #333333;
-            top: 15px;
-            left: 15px;
-            position: absolute;
-        }
-
-        p {
-            color: #333333;
-            font-size: 50px;
+       p {
+            color:#333333;
+            font-size:50px;
             margin: 10px 0;
-            font-weight: bold;
+            font-weight:bold;
         }
-
         h1 {
-            margin: 10px 0;
-            font-weight: 900;
-            font-size: 3rem;
-            color: #333;
+            margin : 10px 0;
+            font-weight:900;
+            font-size:4rem;
+            font-weight:bold;
+            color:#333;
         }
+        button{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #705E7B; /* Your new palette primary color */
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+        
+     </style>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WF5WKSD246"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        a.get-started-btn {
-            display: inline-block;
-            padding: 15px 40px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            margin-top: 20px;
-        }
-    </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF5WKSD246"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-WF5WKSD246');
-    </script>
-</head>
-<body>
-    <div class="top-left-label">Student toolkit</div>
-    <div class="main-content">
-        <h2 class="greeting">Good afternoon. Ready to manage everything systematically?</h2>
-        <h1 class="main-title">Student toolkit</h1>
-        <h2 class="sub-title">For youngers</h2>
-        <a href="Dashboard.html" class="get-started-btn">Get started</a>
-    </div>
-
-    <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('./sw.js')
-                .then(reg => console.log('Service Worker active!', reg))
-                .catch(err => console.log('Service Worker error:', err));
-        });
-    }
-    </script>
-</body>
-</html>
+  gtag('config', 'G-WF5WKSD246');
+</script>
+</head> 
+   <div class="top-left-label">Student toolkit</div>
+   <div class= "main content">
+   <h2 class="greeting">Good afternoon.Ready to manage everything systematically?</h2>
+   <h1 class="main-title">Student toolkit
+   </h1>
+   <h2 class="sub-title">For youngers</h2>
+   <a href="Dashboard.html">Get started</a>
+   </div>
+   <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('Service Worker active!', reg))
+        .catch(err => console.log('Service Worker error:', err));
+    });
+  }
+</script>
