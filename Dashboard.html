@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,8 @@
 
         /* 2. Brighter, Lighter Celestial Sky-Blue Gradient Backdrop */
         body {
-            background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 50%,#A1C4FD 100%);
+            background: linear-gradient(135deg, #B4AEE8 0%, #D8C2E6 50%, #ECE3F4 100%);
+
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -26,7 +27,7 @@
 
         /* 3. Pristine White Title */
         h1 {
-            color: #ffffff;
+            color: #3E3852;
             font-size: 42px;
             font-weight: 700;
             margin-bottom: 45px;
@@ -53,7 +54,7 @@
             border-radius: 3px !important;
             
             /* The clean black underlines directly underneath your button text */
-            text-decoration: underline !important;
+            text-decoration: none !important;
             text-decoration-color: #000000 !important;
             text-underline-offset: 3px; /* Creates the perfect separation gap */
             
@@ -69,8 +70,8 @@
             cursor: pointer;
 
             /* Aesthetic Golden Borders + Powerful Electric Halo Glow Effect */
-            border: 2px solid #FFD700 !important;
-            box-shadow: 0 0 15px rgba(255, 235, 59, 0.95) !important;
+            border: 2px solid #705E7B !important;
+            box-shadow: 0 0 15px rgba(255, 235, 59, 0.95); 
             
             outline: none !important;
             -webkit-tap-highlight-color: transparent;
@@ -80,6 +81,10 @@
         .toolkit-card:active {
             transform: scale(0.97);
             background-color: #fcfcfc !important;
+          .your-tile-class:hover {
+            transform: translateY(-4px); 
+         transition: transform 0.2s ease;
+}
         }
     </style>
 </head>
@@ -90,12 +95,12 @@
     <div class="toolkit-grid" id="dashboard-grid">
         <button class="toolkit-card" onclick="window.location.href='todo.html'">To- do-list</button>
         <button class="toolkit-card" onclick="alert('Time table opening...')">Time table</button>
-        <button class="toolkit-card" onclick="window.location.href='flashcard.html'">Flashcards</button>
+        <button class="toolkit-card" onclick="window.location.href='flashcard.html'"">Flashcard</button>
+        <button class="toolkit-card" onclick="openDatesView()">Dates</button>
         <button class="toolkit-card" onclick="window.location.href='converter.html'">Unitconverter</button>
         <button class="toolkit-card" onclick="alert('Notes opening...')">Notes</button>
         <button class="toolkit-card" onclick="alert('Reminders opening...')">Reminders</button>
         <button class="toolkit-card" onclick="alert('Calendars opening...')">Calenders</button>
-        <button class="toolkit-card" onclick="alert('Dates layout opening...')">Dates</button>
     </div>
 
     <script>
